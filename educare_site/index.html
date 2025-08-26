@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCare - Conectando Estudantes e Tutores</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="img/educare_logo.jpeg" alt="EduCare Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#pais">Para Pais</a></li>
+                    <li><a href="#estudantes">Para Estudantes</a></li>
+                    <li><a href="#seguranca">Segurança</a></li>
+                    <li><a href="#politicas">Políticas</a></li>
+                    <li><a href="video_call.html">Aula Online</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Conectamos estudantes que precisam de ajuda a jovens tutores que querem compartilhar conhecimento e gerar renda extra</h1>
+                    <p>Uma plataforma segura e confiável para aprendizado online, com foco na proteção de menores e conformidade legal.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" onclick="showSignupModal('pais')">Cadastro para Pais/Responsáveis</button>
+                        <button class="btn btn-secondary" onclick="showSignupModal('estudantes')">Cadastro para Estudantes</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/app_interface.jpg" alt="Interface do aplicativo EduCare">
+                </div>
+            </div>
+        </section>
+
+        <!-- Funcionalidades para Pais Section -->
+        <section id="pais" class="section">
+            <div class="container">
+                <h2>Funcionalidades para Pais/Responsáveis</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📋</div>
+                        <h3>Cadastro Seguro</h3>
+                        <p>Cadastro com documentos oficiais (CPF, RG, comprovante de residência) para máxima segurança.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔐</div>
+                        <h3>Verificação em Duas Etapas</h3>
+                        <p>Verificação por e-mail e telefone para garantir a autenticidade da conta.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✍️</div>
+                        <h3>Consentimento Digital</h3>
+                        <p>Assinatura eletrônica para consentimento digital, garantindo conformidade legal.</p>
+                    </div>
+                </div>
+                <div class="cta-section">
+                    <button class="btn btn-primary">Cadastro de Família</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Funcionalidades para Estudantes Section -->
+        <section id="estudantes" class="section">
+            <div class="container">
+                <h2>Funcionalidades para Estudantes</h2>
+                <div class="how-it-works">
+                    <h3>Como funciona:</h3>
+                    <div class="steps-grid">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h4>Alunos Contratam Tutores</h4>
+                            <p>Estudantes podem encontrar e contratar tutores qualificados para suas necessidades específicas.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h4>Tutores Aprovados</h4>
+                            <p>Tutores passam por processo de aprovação com documentos e comprovação escolar.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h4>Proteção para Menores</h4>
+                            <p>Limitações especiais para menores de idade, com pagamentos em nome do responsável.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Segurança e Privacidade Section -->
+        <section id="seguranca" class="section">
+            <div class="container">
+                <h2>Segurança e Privacidade</h2>
+                <div class="security-features">
+                    <div class="security-card">
+                        <div class="security-icon">💬</div>
+                        <h3>Chat 100% Moderado</h3>
+                        <p>Todas as conversas acontecem dentro da plataforma com moderação ativa.</p>
+                    </div>
+                    <div class="security-card">
+                        <div class="security-icon">📹</div>
+                        <h3>Aulas Monitoradas</h3>
+                        <p>Aulas online monitoradas com opção de gravação para segurança.</p>
+                    </div>
+                    <div class="security-card">
+                        <div class="security-icon">🚫</div>
+                        <h3>Bloqueio de Contatos Externos</h3>
+                        <p>Prevenção de contatos externos e disciplinas inadequadas.</p>
+                    </div>
+                    <div class="security-card">
+                        <div class="security-icon">⚖️</div>
+                        <h3>Conformidade Legal</h3>
+                        <p>Total conformidade com LGPD, ECA e Marco Civil da Internet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Painel dos Pais Section -->
+        <section class="section">
+            <div class="container">
+                <h2>Painel dos Pais</h2>
+                <div class="parent-panel-features">
+                    <div class="panel-feature">
+                        <h3>🔔 Alertas de Agendamento</h3>
+                        <p>Receba notificações sobre todas as aulas agendadas para seu filho.</p>
+                    </div>
+                    <div class="panel-feature">
+                        <h3>📊 Relatórios Mensais</h3>
+                        <p>Acompanhe atividades e finanças com relatórios detalhados mensais.</p>
+                    </div>
+                    <div class="panel-feature">
+                        <h3>🔓 Controle Total</h3>
+                        <p>Botão para desvincular menor da plataforma a qualquer momento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Políticas Section -->
+        <section id="politicas" class="section">
+            <div class="container">
+                <h2>Nossas Políticas</h2>
+                <div class="policies-content">
+                    <p>Acesse nossos Termos de Uso e Política de Privacidade específicos para menores de idade.</p>
+                    <p><strong>Destaque especial:</strong> Proteção contra exploração e riscos digitais.</p>
+                    <div class="policy-links">
+                        <a href="#" class="btn btn-outline">Termos de Uso</a>
+                        <a href="#" class="btn btn-outline">Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Funciona Tecnicamente Section -->
+        <section class="section">
+            <div class="container">
+                <h2>Como Funciona Tecnicamente</h2>
+                <div class="tech-explanation">
+                    <div class="tech-step">
+                        <h3>1. Cadastro em Duas Etapas</h3>
+                        <p>Pais se cadastram primeiro, depois adicionam os filhos ao sistema.</p>
+                    </div>
+                    <div class="tech-step">
+                        <h3>2. Consentimento Digital</h3>
+                        <p>Utilização de assinatura eletrônica via DocuSign/Assinei para consentimento.</p>
+                    </div>
+                    <div class="tech-step">
+                        <h3>3. Verificação de Documentos</h3>
+                        <p>Verificação automática de CPF através de APIs especializadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Cadastro -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Cadastro</h2>
+            <p id="modalDescription">Em breve, você poderá se cadastrar em nossa plataforma!</p>
+            <button class="btn btn-primary" onclick="closeModal()">Entendi</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#pais">Para Pais</a></li>
+                    <li><a href="#estudantes">Para Estudantes</a></li>
+                    <li><a href="#seguranca">Segurança</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EduCare. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
